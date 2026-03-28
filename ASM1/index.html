@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .list-hover .list-group-item:hover {
+            background-color: cadetblue;
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-dark">
+
+    <!-- <header> -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top mb-3">
+        <div class="container">
+
+            <a class="navbar-brand" href="">
+                <img src="images/logo.webp" alt="" style="width: 50px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fa-solid fa-list"></i> Trang chủ
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="chitiet.html">
+                            <i class="fa-solid fa-circle-info"></i> Giới thiệu nhân vật mới
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-calendar-days"></i> Sự kiện
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user"></i> Tài khoản
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Đăng
+                                    ký/Đăng nhập</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Đăng nhập</a></li> -->
+                            <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="writer.html">
+                            <i class="fa-solid fa-film"></i> Đăng bài biết
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="face.html">
+                            <i class="fa-solid fa-film"></i> Chỉnh sửa trang cá nhân
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link">Tiếng Việt</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link">Tiếng Anh</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- </header> -->
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">ĐĂNG KÝ/ĐĂNG NHẬP</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container mt-3">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#register">Đăng ký</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#login">Đăng nhập</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+
+                            <div id="register" class="container tab-pane active"><br>
+                                <!-- Form Đăng ký -->
+                                <h3>Form Đăng Ký Thông Tin</h3>
+                                <div class="card blog bg-light">
+                                    <div class="card-body">
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Họ và Tên</label>
+                                            <input class="form-control" placeholder="Nhập họ và Tên">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" placeholder="Nhập Email">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Số điện thoại</label>
+                                            <input type="email" class="form-control" placeholder="Nhập số điện thoại">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Mật khẩu</label>
+                                            <input class="form-control" placeholder="Nhập mật khẩu">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Xác nhận mật khẩu</label>
+                                            <input class="form-control" placeholder="Nhập lại mật khẩu">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Giới tính:</label>
+
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" name="gioitinh" id="nam" class="form-check-input"
+                                                    checked>
+                                                <label for="nam" class="form-check-label">Nam</label>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" name="gioitinh" id="nu" class="form-check-input">
+                                                <label for="nu" class="form-check-label">Nữ</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Ngôn Ngữ</label>
+                                            <select class="form-select">
+                                                <option>Tiếng Việt</option>
+                                                <option>Tiếng Iran</option>
+                                                <option>Tiếng Anh</option>
+                                                <option>Tiếng Trung</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" checked>
+                                                <label class="form-check-label">Tôi đồng ý với các điều khoảng và điều
+                                                    kiện</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <p class="card-text">
+                                                <a href="" class="btn btn-primary">Đăng ký</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="login" class="container tab-pane fade"><br>
+                                <!-- Form đăng nhập -->
+                                <h3>Form Đăng Nhập</h3>
+                                <div class="card blog bg-light">
+                                    <div class="card-body">
+
+
+                                        <form class="was-validated">
+                                            <div class="mb-3 mt-3">
+                                                <label for="uname" class="form-label">Họ và tên:</label>
+                                                <input type="text" class="form-control" id="uname"
+                                                    placeholder="Nhập họ tên" required>
+                                                <div class="valid-feedback">Hợp lệ</div>
+                                                <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="pwd" class="form-label">Mật khẩu:</label>
+                                                <input type="password" class="form-control" id="pwd"
+                                                    placeholder="Nhập mật khẩu" required>
+                                                <div class="valid-feedback">Hợp lệ</div>
+                                                <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <!-- <div id="header"></div> -->
+
+    <!-- Slise -->
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Bên trái -->
+            <div class="col-sm-4">
+
+                <!-- Chuyên mục -->
+                <h3 class="text-info mt-2">Chuyên mục Michos</h3>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a class="nav-link" href="#">FlyMe2theMoon</a>
+                        <span class="badge bg-primary rounded-pill">5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a class="nav-link" href="#">Zombiegal Kawaii</a>
+                        <span class="badge bg-primary rounded-pill">10</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a class="nav-link" href="#">Guns Girl Z</a>
+                        <span class="badge bg-primary rounded-pill">15</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a class="nav-link" href="#">Honkai Impact 3</a>
+                        <span class="badge bg-primary rounded-pill">20</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a class="nav-link" href="#">Tears of Themis</a>
+                        <span class="badge bg-primary rounded-pill">25</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a class="nav-link" href="#">Genshin Impact</a>
+                        <span class="badge bg-primary rounded-pill">30</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a class="nav-link" href="#">Honkai: Star Rail</a>
+                        <span class="badge bg-primary rounded-pill">35</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a class="nav-link" href="#">Zenless Zone Zero</a>
+                        <span class="badge bg-primary rounded-pill">40</span>
+                    </li>
+                </ul>
+                <!-- End chuyên mục -->
+
+                <div class="card blog mt-3 bg-light">
+                    <div class="container mt-3 mb-2">
+                        <h5 class="card-title text-info text-center">Nhân vật sắp ra mắt</h5>
+                    </div>
+                    <div class="list-group list-hover">
+
+                        <!-- Item 1 -->
+                        <div class="list-group-item d-flex align-items-center gap-3">
+                            <img src="images/varka.jpg" class="rounded" width="80" height="80">
+
+                            <div>
+                                <h5 class="mb-1">Đại đội trưởng Varka</h5>
+                                <p class="mb-1">Dưới danh nghĩa Kỵ Sĩ Bắc Phong hùng mạnh nhất,
+                                    vung hai đòn chém liên tiếp cực mạnh về phía trước,
+                                    gây hai lần Sát Thương Nguyên Tố Phong.
+                                </p>
+                                <!-- <small class="text-muted">Thông tin thêm</small> -->
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="list-group-item d-flex align-items-center gap-3">
+                            <img src="images/sparxie.jpg" class="rounded" width="80" height="80">
+
+                            <div>
+                                <h5 class="mb-1">Quý cô Sparxie</h5>
+                                <p class="mb-1">Chào bạn, Cầu thủ bóng chày thiên hà ,
+                                    chào mừng bạn đến với buổi phát trực tiếp! Mình là Sparxie,
+                                    người bạn tốt của bạn đây~
+                                </p>
+                                <!-- <small class="text-muted">Thông tin thêm</small> -->
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="list-group-item d-flex align-items-center gap-3">
+                            <img src="images/aria.jpg" class="rounded" width="80" height="80">
+
+                            <div>
+                                <h5 class="mb-1">Cô nàng Aria</h5>
+                                <p class="mb-1">Cô ấy là giọng ca chính, nhưng cô ấy có thể nhảy không ngừng nghỉ trong
+                                    thời gian dài...
+                                </p>
+                                <!-- <small class="text-muted">Thông tin thêm</small> -->
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="list-group-item d-flex align-items-center gap-3">
+                            <img src="images/kirara.jpg" class="rounded" width="80" height="80">
+
+                            <div>
+                                <h5 class="mb-1">Shipper Kirara</h5>
+                                <p class="mb-1">Kirara (tiếng Nhật: 綺良々 Kirara) là một nhân vật Dendro có thể chơi được
+                                    trong Genshin Impact.
+                                </p>
+                                <!-- <small class="text-muted">Thông tin thêm</small> -->
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="list-group-item d-flex align-items-center gap-3">
+                            <img src="images/hutao.webp" class="rounded" width="80" height="80">
+
+                            <div>
+                                <h5 class="mb-1">Đường chủ Hutao</h5>
+                                <p class="mb-1">Cô có thiên phú thơ văn và luôn khoác lên mình vẻ ngoài khôi hài, lập
+                                    dị. Tuy vậy, đằng sau vẻ ngoài ấy là trọng trách của một đường chủ thứ 77 của Vãng
+                                    Sinh Đường
+                                </p>
+                                <!-- <small class="text-muted">Thông tin thêm</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Bên phải -->
+            <div class="col-sm-8">
+                <h2 class="text-info mb-3">Tất cả bài viết</h2>
+
+                <!-- 4 khung -->
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+
+                        <div class="card bg-light h-100">
+                            <div class="container">
+                                <h5 class="card-title text-center">Đại đội trưởng Varka
+                                </h5>
+                            </div>
+                            <a href="bai4.html">
+                                <img src="images/varka2.jpg" class="card-img-top" alt="..." width="50px"></a>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Varka là một nhân vật hệ Phong có thể chơi được trong Genshin Impact.
+                                    Đại Sư Phụ của Hiệp sĩ Favonius và Hiệp sĩ đương nhiệm của Boreas ,
+                                    cuối cùng đã trở về quê hương Mondstadt. Vui vẻ và thường vô tư,
+                                    nhưng vẫn là một nhà lãnh đạo và hiệp sĩ xuất sắc.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light h-100">
+                            <div class="container">
+                                <h5 class="card-title text-center">Quý cô Sparxie
+                                </h5>
+                            </div>
+                            <img src="images//sparxie2.webp" class="card-img-top" alt="..." width="200px">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Sparxie là một nhân vật có thể chơi được trong Honkai: Star Rail .
+                                    Thích! Theo dõi! Phát trực tuyến! Lượt xem! Tiệc tùng đến tận cùng thế giới!
+                                    Sparxie và Sparkle , Mặt nạ và Kẻ ngốc về cơ bản là giống nhau.
+                                    Ai được nhìn thấy, ai được yêu thích thì đó là câu trả lời đúng!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        
+                            <div class="card bg-light h-100">
+                                <div class="container">
+                                    <h5 class="card-title text-center">Cô nàng Aria
+                                    </h5>
+                                </div>
+                                <a href="chitiet.html">
+                                <img src="images/arai2.webp" class="card-img-top" alt="..." width="60px"></a>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Cô ấy là giọng ca chính, nhưng cô ấy có thể nhảy không ngừng nghỉ trong thời
+                                        gian dài...
+                                        Chúng ta có chắc chắn rằng cô ấy không phải là một nhân tạo thông minh được ngụy
+                                        trang không?
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light h-100">
+                            <div class="container">
+                                <h5 class="card-title">Shipper miêu nữ Kirara</h5>
+                            </div>
+                            <img src="images/kirara2.jpg" class="card-img-top" alt="..." width="140px">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Kirara là nhân vật 4 sao hệ Thảo sử dụng kiếm đơn trong Genshin Impact,
+                                    hoạt động chính là nhân viên chuyển phát tại Inazuma.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center mt-3 mb-3">
+                        <li class="page-item"><a class="page-link" href="#">&#8592</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">&#8594</a></li>
+                    </ul>
+                </nav>
+
+
+
+
+                <!-- End 4 khung -->
+            </div>
+            <!-- End bên phải -->
+
+
+        </div>
+    </div>
+
+
+<!-- <footer class="bg-warning text-dark fw-bold text-center py-2 mb-3">Mihoyo@@</footer> -->
+    <footer class="bg-dark text-light pt-4 pb-3 mt-4">
+        <hr class="border border-warning border-2">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Cột 1 -->
+      <div class="col-md-3">
+        <h5 class="text-warning">Địa chỉ shop</h5>
+        <p class="mb-1">Minh Thành Tackle</p>
+        <p class="mb-1">109A, Đường Số 51</p>
+        <p class="mb-1">Phường Tân Quy, Quận 7</p>
+        <p class="mb-1">TP. Hồ Chí Minh</p>
+        <p>Việt Nam</p>
+      </div>
+
+      <!-- Cột 2 -->
+      <div class="col-md-3">
+        <h5 class="text-warning">Liên hệ</h5>
+        <p class="mb-1">Tel: 0903.706.396 (Zalo)</p>
+        <p class="mb-1">0972.746.054</p>
+        <p class="mb-1">9:00 - 12:00 AM</p>
+        <p class="mb-1">1:00 - 7:00 PM</p>
+        <p>Thứ 2 - Thứ 7</p>
+      </div>
+
+      <!-- Cột 3 -->
+      <div class="col-md-3">
+        <h5 class="text-warning">Mạng xã hội</h5>
+        <p>Facebook</p>
+
+        <iframe 
+          src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/minhthanhtackles.vietnam&tabs=timeline&width=250&height=130"
+          width="100%" height="130"
+          style="border:none;overflow:hidden"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Cột 4 -->
+      <div class="col-md-3">
+        <h5 class="text-warning">Bản đồ</h5>
+        <iframe 
+          src="https://www.google.com/maps?q=Quận+7+TPHCM&output=embed"
+          width="100%" height="130"
+          style="border:0;" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+
+    <!-- dòng dưới -->
+    <div class="text-center mt-3 small text-secondary">
+      © 2026 Minh Thành Tackle
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
