@@ -6,10 +6,10 @@ import test from './components/test.vue';
 </script> 
 
 <template> 
-<!-- <Bai3></Bai3> -->
+<Bai3></Bai3>
   <!-- <Bai4></Bai4>  -->
    <!-- <slide4L4/> -->
-    <test></test>
+    <!-- <test></test> -->
 </template> 
 
 <style scoped></style>
