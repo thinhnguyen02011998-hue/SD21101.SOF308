@@ -71,12 +71,18 @@ const student = ref({
 let isEditing = ref(false)
 let editingIndex = ref(null)
 
+// test
+// student.value = { ...students.value[1] }
+// isEditing.value = true
+// editingIndex.value = 0
+
+
 // Submit form
 function submitForm() {
-    if (isessionng.value) {
+    if (isEditing.value) {
         // Cập nhật
         students.value[editingIndex.value] = { ...student.value }
-        isessionng.value = false
+        isEditing.value = false
         editingIndex.value = null
     } else {
         // Thêm mới

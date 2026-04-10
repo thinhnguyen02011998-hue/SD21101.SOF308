@@ -44,10 +44,10 @@ const students = ref([
    <!-- <demo1 /> -->
     <!-- <demo2 /> -->
      <!-- <demo3 /> -->
-     <!-- <bai1 /> -->
-      <!-- <bai2 /> -->
+     <bai1 />
+      <bai2 />
        <bai3 />
-        <!-- <bai4 /> -->
+        <bai4 />
 
 
 

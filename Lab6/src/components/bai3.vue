@@ -4,9 +4,9 @@
 
         <div class="row">
             <div class="col-sm-4 mb-4" v-for="(item, index) in items" :key="index">
+                
                 <div class="card">
                     <img :src="item.image" class="img-fluid" alt="Hình ảnh" />
-
                     <div class="card-body">
                         <h3 class="card-title">{{ item.title }}</h3>
                         <p class="card-text">{{ item.content }}</p>
