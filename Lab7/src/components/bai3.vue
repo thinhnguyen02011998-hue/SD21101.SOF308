@@ -62,8 +62,7 @@
         <li class="list-group-item"><strong>Email:</strong> {{ user.email }}</li>
         <li class="list-group-item"><strong>Ngày sinh:</strong> {{ user.dob }}</li>
         <li class="list-group-item"><strong>Giới tính:</strong> {{ user.gender }}</li>
-        <li class="list-group-item">
-          <strong>Ngôn ngữ:</strong> {{ user.languages.join(', ') }}
+        <li class="list-group-item"><strong>Ngôn ngữ:</strong> {{ user.languages.join(', ') }}
         </li>
       </ul>
     </div>

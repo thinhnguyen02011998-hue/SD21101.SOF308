@@ -18,8 +18,8 @@ import bai4 from './components/bai4.vue'
   <!-- <HelloWorld /> -->
    <!-- <demo1 /> -->
     <!-- <demo2 /> -->
-     <!-- <bai1 /> -->
-     <!-- <bai2 /> -->
+     <bai1 />
+     <bai2 />
      <bai3 />
-     <!-- <bai4 /> -->
+     <bai4 />
 </template>

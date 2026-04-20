@@ -1,7 +1,7 @@
 <template>
     <div>
         <input type="number" v-model.lazy="number"><br>
-        <input type="text" v="model=number2" v-on:keyup.up.ctrl="number2++" v-on:keyup.down.shift="number2--">
+        <input type="text" v="model=number2" v-on:keyup.up.ctrl="number2++" v-on:keydown.down.shift="number2--">
         <hr>
         Số 1: <h4>{{ number }}</h4><br>
         Số 2: <h4>{{ number2 }}</h4>

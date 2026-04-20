@@ -11,6 +11,7 @@
           class="form-control" 
           v-model="newToDo" 
           placeholder="Nhập tên công việc">
+          
       </div>
       <button type="submit" class="btn btn-primary">
         Thêm công việc

@@ -1,14 +1,12 @@
+<script setup>
+import { computed } from "vue";
+import { useRoute } from "vue-router";
+const route = useRoute();
+const postId = computed(() => route.params.id);
+</script>
 <template>
-  <div>
-    <h2>Blog List</h2>
-
-    <ul>
-      <li>
-        <RouterLink to="/blog/1">Bài viết 1</RouterLink>
-      </li>
-      <li>
-        <RouterLink to="/blog/2">Bài viết 2</RouterLink>
-      </li>
-    </ul>
-  </div>
+  <section>
+    <h2>Blog Post</h2>
+    <p>ID bài viết: {{ postId }}</p>
+  </section>
 </template>

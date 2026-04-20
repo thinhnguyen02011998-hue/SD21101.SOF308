@@ -19,10 +19,13 @@
           class="form-control" 
           rows="3" 
           v-model="commentText" 
+          @keyup.ctrl.enter="submitComment"
           placeholder="Nhập bình luận của bạn"
         ></textarea>
       </div>
       <button type="submit" class="btn btn-success">Gửi bình luận</button>
+
+        <hr>
     </form>
 
     <!-- Hiển thị danh sách bình luận -->

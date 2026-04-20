@@ -1,11 +1,3 @@
-<!-- <template>
-  <section>
-    <h2>Home</h2>
-    <p>Trang chủ Lab8</p>
-  </section>
-</template> -->
-
-
 <script setup>
 import { USERS } from "../data/users";
 </script>

@@ -1,0 +1,60 @@
+<template>
+ <footer class="bg-dark text-light pt-4 pb-3 mt-4">
+        <hr class="border border-warning border-2">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Cột 1 -->
+      <div class="col-md-3">
+        <h5 class="text-warning">Địa chỉ shop</h5>
+        <p class="mb-1">Minh Thành Tackle</p>
+        <p class="mb-1">109A, Đường Số 51</p>
+        <p class="mb-1">Phường Tân Quy, Quận 7</p>
+        <p class="mb-1">TP. Hồ Chí Minh</p>
+        <p>Việt Nam</p>
+      </div>
+
+      <!-- Cột 2 -->
+      <div class="col-md-3">
+        <h5 class="text-warning">Liên hệ</h5>
+        <p class="mb-1">Tel: 0903.706.396 (Zalo)</p>
+        <p class="mb-1">0972.746.054</p>
+        <p class="mb-1">9:00 - 12:00 AM</p>
+        <p class="mb-1">1:00 - 7:00 PM</p>
+        <p>Thứ 2 - Thứ 7</p>
+      </div>
+
+      <!-- Cột 3 -->
+      <div class="col-md-3">
+        <h5 class="text-warning">Mạng xã hội</h5>
+        <p>Facebook</p>
+
+        <iframe 
+          src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/minhthanhtackles.vietnam&tabs=timeline&width=250&height=130"
+          width="100%" height="130"
+          style="border:none;overflow:hidden"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Cột 4 -->
+      <div class="col-md-3">
+        <h5 class="text-warning">Bản đồ</h5>
+        <iframe 
+          src="https://www.google.com/maps?q=Quận+7+TPHCM&output=embed"
+          width="100%" height="130"
+          style="border:0;" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+
+    <!-- dòng dưới -->
+    <div class="text-center mt-3 small text-secondary">
+      © 2026 Minh Thành Tackle
+    </div>
+  </div>
+</footer>
+
+</template>
